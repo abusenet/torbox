@@ -1,0 +1,12 @@
+{
+  "name": "torbox",
+  "author": {
+    "name": "Abusenet"
+  },
+  "scripts": {
+    "extension": "npm run dev -w packages/extension"
+  },
+  "workspaces": [
+    "packages/extension"
+  ]
+}

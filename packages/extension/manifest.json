@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "version": "0.1.0",
+  "name": "torbox",
+  "description": "TorBox Web Extension",
+  "author": "Abusenet",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "action": {
+    "add": "Add to TorBox"
+  }
+}

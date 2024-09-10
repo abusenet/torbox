@@ -1,0 +1,31 @@
+{
+  "name": "torbox-extension",
+  "description": "TorBox Web Extension.",
+  "version": "0.1.0",
+  "keywords": [
+    "extension",
+    "browser-extension",
+    "web-extension",
+    "torbox"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "extension dev",
+    "start": "extension start",
+    "build": "extension build"
+  },
+  "devDependencies": {
+    "extension": "latest",
+    "webextension-polyfill": "^0.12.0"
+  },
+  "private": true,
+  "author": {
+    "name": "Abusenet"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abusenet/torbox.git",
+    "directory": "packages/extension"
+  }
+}
