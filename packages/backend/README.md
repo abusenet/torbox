@@ -1,5 +1,7 @@
 # TorBox Backend
 
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/Abusenet/torbox)
+
 Backend for TorBox.
 
 ## Why?
