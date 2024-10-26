@@ -1,0 +1,23 @@
+{
+    "name": "torbox-backend",
+    "description": "TorBox Backend",
+    "version": "0.1.0",
+    "keywords": [
+      "backend",
+      "torbox"
+    ],
+    "type": "module",
+    "scripts": {
+    },
+    "private": true,
+    "author": {
+      "name": "Abusenet"
+    },
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/abusenet/torbox.git",
+      "directory": "packages/backend"
+    }
+  }
+  

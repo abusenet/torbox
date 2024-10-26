@@ -1,6 +1,6 @@
-# torbox
+# TorBox Web Extension
 
-TorBox Web Extension
+Web Extension to add items to TorBox
 
 ## Available Scripts
 
