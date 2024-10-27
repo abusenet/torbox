@@ -1,10 +1,5 @@
-/**
- * A User
- * @typedef {Object} User
- * @property {string} username
- * @property {string} password
- * @property {string[]} folders - list of folders the user has access.
- */
+const TORBOX_USERNAME = "faa";
+const TORBOX_PASSWORD = "";
 
 /**
  * Lists of users with access to this backend.
@@ -20,6 +15,14 @@ const USERS = [
   //   ],
   // },
 ];
+
+/**
+ * A User
+ * @typedef {Object} User
+ * @property {string} username
+ * @property {string} password
+ * @property {string[]} folders - list of folders the user has access.
+ */
 
 /**
  * Gets the user authorized for this request.
@@ -127,7 +130,10 @@ async function item(request, env) {
   const url = new URL(`https://webdav.torbox.app`);
   url.pathname = pathname.replace(new RegExp(`^/${parent}/`), folder);
 
-  const authorization = btoa(`${env.USERNAME}:${env.PASSWORD}`);
+  const username = env.TORBOX_USERNAME || TORBOX_USERNAME;
+  const password = env.TORBOX_PASSWORD || TORBOX_PASSWORD;
+  const authorization = btoa(`${username}:${password}`);
+
   request = new Request(url, request);
   request.headers.set("Authorization", `Basic ${authorization}`);
   response = await fetch(request);
